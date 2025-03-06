@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>PDFiumSharpV2</id>
+    <version>1.1.4</version>
+    <authors>ArgusMagnus</authors>
+    <owners>Zubastic</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MS-RL</license>
+    <licenseUrl>https://licenses.nuget.org/MS-RL</licenseUrl>
+    <projectUrl>https://github.com/Zubastic/PDFiumSharp</projectUrl>
+    <description>C#/.NET Wrapper for the PDFium library. Add also a package for the native binaries (currently only PDFium.Windows is provided) or provide them (pdfium_x64.dll, pdfium_x86.dll) yourself.</description>
+    <releaseNotes>Updated for 5907 pdfium version.</releaseNotes>
+    <copyright>Copyright 2023</copyright>
+    <tags>C# PDF PDFium Renderer Rendering</tags>
+    <repository type="git" url="https://github.com/Zubastic/PDFiumSharp.git" branch="master" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="2.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.RuntimeInformation" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

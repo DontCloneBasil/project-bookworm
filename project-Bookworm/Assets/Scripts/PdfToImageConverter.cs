@@ -37,9 +37,9 @@ public class PdfToImageConverter : MonoBehaviour
                 using (var image = document.Render(i, 3840, 2160, true))
                 {
                     //combines the path and sets the name *name can be anything but avoid making it messy
-                    string outputPath = Path.Combine(outputFolder, $"page_{i + 1}.png");
+                    string outputPath = Path.Combine(outputFolder, $"page_{i + 1}.Jpeg");
                     //saves the image in the outputpath in whatever image format you want
-                    image.Save(outputPath, ImageFormat.Png);
+                    image.Save(outputPath, ImageFormat.Jpeg);
                     Debug.Log($"Saved: {outputPath}");
                 }
             }

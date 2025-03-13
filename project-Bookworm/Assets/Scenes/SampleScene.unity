@@ -862,8 +862,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c2b926157be1e84e83e7c9beed0a60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayImage: {fileID: 367754204}
-  imagePath: Assets/OutputImages/page_1.jpeg
+  pages:
+  - {fileID: 0}
+  - {fileID: 0}
+  pageNumber: 1
 --- !u!1 &773606721
 GameObject:
   m_ObjectHideFlags: 0

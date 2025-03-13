@@ -16,11 +16,11 @@ public class PdfToImageConverter : MonoBehaviour
     void Start()
     {
         //starts the conversion method
-        ConvertPdfToImages(pdfPath, outputPath);
+        FormatConverter(pdfPath, outputPath);
     }
 
 
-    void ConvertPdfToImages(string pdfFilePath, string outputFolder)
+    void FormatConverter(string pdfFilePath, string outputFolder)
     {
         //checks if the path to the outputfolder exist
         if (!Directory.Exists(outputFolder))
@@ -40,6 +40,8 @@ public class PdfToImageConverter : MonoBehaviour
                     string outputPath = Path.Combine(outputFolder, $"page_{i + 1}.Jpeg");
                     //saves the image in the outputpath in whatever image format you want
                     image.Save(outputPath, ImageFormat.Jpeg);
+
+                    //to test if the saving worked
                     Debug.Log($"Saved: {outputPath}");
                 }
             }

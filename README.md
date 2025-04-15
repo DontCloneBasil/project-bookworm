@@ -8,3 +8,4 @@ a game project where you can turn pdf's into interactable books
 
 - # packages used
  * [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity?tab=readme-ov-file)
+ * [Unity standalone file browser(SFB)](https://github.com/gkngkc/UnityStandaloneFileBrowser?tab=readme-ov-file)

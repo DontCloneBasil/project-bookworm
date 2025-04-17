@@ -9,6 +9,7 @@ public class ScriptEnabler_Book : MonoBehaviour
     [SerializeField] private GameObject book;
     public DisplayImage displayImage;
     [SerializeField] private PlayerInput inputHandler;
+    [SerializeField] private StoreBooks storeBooks;
     // Start is called before the first frame update
 
     private void OnEnable()
@@ -28,5 +29,6 @@ public class ScriptEnabler_Book : MonoBehaviour
         displayImage.enabled = false;
         transform.parent = null;
         inputHandler.enabled = false;
+        storeBooks.RestoreBooks(this.gameObject);
     }
 }

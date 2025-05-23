@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.IO;
 using System.Linq;
 using UnityEngine.InputSystem;
+using UnityEngine.WSA;
 
 public class DisplayImage : MonoBehaviour
 {
@@ -13,9 +14,13 @@ public class DisplayImage : MonoBehaviour
     [SerializeField] private float pageNumber = 1;
     
     private float minPages = 1; // base minimum amount of pages
-    [SerializeField] private float maxPages; // max amount of pages
-    
+    [SerializeField] public float maxPages; // max amount of pages
 
+    public void SetNameAndPath(string outputFolder, string fileName)
+    {
+        FolderPath = outputFolder;
+        Name = fileName;
+    }
 
     //called when the buttons related to flipping are pressed
     private void OnFlip(InputValue inputValue)
@@ -33,7 +38,8 @@ public class DisplayImage : MonoBehaviour
         for (int i = 0; i < pages.Length; i++)
         {
             //sets the path by combining: folder path, Png name, and  pagenumber + the amount of times it loops for the least amount og repetition
-            string picPath = FolderPath + Name + $"page_{pageNumber + i}.Png";
+            string picPath = FolderPath + '/' + $"{Name}page_{pageNumber + i}.Png";
+            Debug.Log(picPath);
             //checks if the path of the image is valid
             if (File.Exists(picPath))
             {

@@ -5,7 +5,7 @@ a game project where you can turn pdf's into interactable books by converting ev
 * [planning](https://docs.google.com/document/d/1nXBGGhKoWoj-fBNHPAtplmKOh2Wm5Y0G63reqIODsq0/edit?usp=sharing)
 * [daily standup doccument](https://docs.google.com/document/d/e/2PACX-1vSc3DaM4K-wMh1G993mO9SWMg4oZmOvKQwKeo3e9K9Tg2dsF3bSqe7Dz8TZayamOp9dvgiqNgOcroqS/pub)
 * [sprint retrospectives](https://docs.google.com/document/d/1HmgIsTaMZ8jzmpr0nhTSJ9_mMz_bdYlQc7vzto6tAWA/edit?usp=sharing)
-* [test result document](https://docs.google.com/document/d/1tyzmalYMqjvG_QLssF1n3b9jcKVNBFhmjiZAU7dBLC0/edit?tab=t.0)
+* [old test result document](https://docs.google.com/document/d/1tyzmalYMqjvG_QLssF1n3b9jcKVNBFhmjiZAU7dBLC0/edit?tab=t.0) new test document is found in the wiki
 * [activity diagram](https://drive.google.com/file/d/1PjbaW-EgnUJU6uCnz9Fth3UfLgb-Sykx/view?usp=sharing)
 
 - # packages used
